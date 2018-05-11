@@ -4,30 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Test Task by Felix K.</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="main-header">
-        <img src="img/header-logo.png" alt="Логотип Company">
-            <div class="header-wrapper">
-                <nav class="header-menu">
-                <a href="#" class="header-menu__link">Раздел №1</a>
-                <a href="#" class="header-menu__link">Раздел №2</a>
-                <a href="#" class="header-menu__link">Раздел №3</a>
-                <a href="#" class="header-menu__link">Раздел №4</a>
-                <a href="#" class="header-menu__link">Раздел №5</a>
+    <header class="main-header main-header--hidden">
+        <img src="img/header-logo.png" alt="Логотип Company" class="main-header__logo">
+        <div class="call-us" id="calling">
+            <p class="paragraph u-t-18 u-t-bold u-c-dark-grey">+7 000 000-00-00</p>
+            <a href="tel:70000000000" class="call-us__phone-link"><span class="visually-hidden">Позвонить нам</span></a>
+        </div>
+            <nav class="header-menu">
+                <a href="#" class="header-menu__link link">Раздел №1</a>
+                <a href="#" class="header-menu__link link">Раздел №2</a>
+                <a href="#" class="header-menu__link link">Раздел №3</a>
+                <a href="#" class="header-menu__link link">Раздел №4</a>
+                <a href="#" class="header-menu__link link">Раздел №5</a>
             </nav>
             <div class="user-block">
-                <a href="#" class="user-block__comparsion"><span class="user-block__comparsions-count">3</span>Сравнение</a>
-                <select name="header-select" id="head-sel">
-                    <option value="account">Личный кабинет</option>
-                </select>
-                <div class="user-block__call-us">
-                    <p class="paragraph paragraph--mid-up paragraph--bold">+7 000 000-00-00</p>
-                    <a href="tel:70000000000"><span class="visually-hidden">Позвонить нам</span></a>
+                <a href="#" class="user-block__comparsion link"><span>3</span>Сравнение</a>
+                <div class="user-block__selection">
+                    <select name="header-select" id="head-sel">
+                        <option value="/1">Личный кабинет</option>
+                        <option value="/2">Lorem</option>
+                        <option value="/3">Ipsum</option>
+                    </select>
                 </div>
+                <a href="#" class="link user-block__mobile-cabinet">Личный кабинет</a>
             </div>
-        </div>
-        <button class="main-header--menu-button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        <button id="menu-button" class="menu-button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
     </header>
     <main>
         <header class="obj-photo">
@@ -139,7 +143,7 @@
                 <a href="" class="main-footer__social main-footer__social--ok"><span class="visually-hidden">Odnoklassniki</span></a>
                 <a href="" class="main-footer__social main-footer__social--yt"><span class="visually-hidden">Youtube</span></a>
             </div>
-            <p class="paragraph paragraph--large bold">+7 000 000-00-00</p>
+            <p class="paragraph paragraph--large u-t-bold">+7 000 000-00-00</p>
             <p class="paragraph paragraph--small">Адрес, улица, дом, корпус</p>
             <a href="mailto:post@comp.com" class="link">post@comp.com</a>
         </div>
@@ -185,6 +189,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
 <!--TODO: Доступность не забыть-->

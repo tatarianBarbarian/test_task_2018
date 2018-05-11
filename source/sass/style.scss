@@ -1,0 +1,26 @@
+//Vendors styles import
+@import 'vendors/normalize';
+@import 'vendors/peppermint.suggested.scss';
+
+
+@import 'abstracts/_functions';
+@import 'abstracts/_mixins';
+@import 'abstracts/_variables';
+
+//Base styles, resets, typografy, utility classes
+
+@import 'base/_base';
+@import 'base/_animations';
+@import 'base/_typography';
+@import 'base/_utilities';
+
+//Layout styles
+
+@import 'layout/_main_header.scss';
+
+//Component styles
+
+@import 'components/_menu_btn.scss';
+@import 'components/_call-us.scss';
+
+@import 'pages/_notifications';

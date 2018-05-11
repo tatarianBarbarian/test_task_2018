@@ -1,0 +1,139 @@
+.main-header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2.5rem 4rem;
+    position: relative;
+    overflow: hidden;
+    transition: height 3s;
+
+    &--hidden {
+        height: 90px;
+        transition: height 3s;
+    }
+
+
+    &__logo {
+        position: absolute;
+        top: 2.4rem;
+        left: 4rem;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 11rem;
+
+        &>* {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .user-block {
+        margin-top: 40rem;
+        display: flex;
+        flex-direction: column;
+
+        &>* {
+            margin-bottom: 1rem;
+        }
+
+        &__selection {
+            display: none;
+        }
+
+        &__comparsion {
+                position: relative;
+                margin-left: 1.7rem;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 2rem;
+                    height: 1.5rem;
+                    background: url(../img/comp-icon.png) no-repeat;
+                    background-position: center;
+                    left: -1.6rem;
+
+                }
+                span {
+                    display: inline-block;
+                    font-size: 11px;
+                    color: white;
+                    background: $color_primary;
+                    width: 14px;
+                    height: 13px;
+                    text-align: center;
+                    border-radius: 50%;
+                    position: relative;
+                    top: -10px;
+                    left: -5px;
+                }
+            }
+    }
+
+}
+
+@media (min-width: 1280px) {
+    .main-header {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+
+        &--hidden {
+            height: auto;
+        }
+
+        &__logo {
+            position: static;
+        }
+
+        .header-menu {
+            flex-direction: row;
+            align-items: center;
+            margin-top: 0;
+            margin-left: 4rem;
+
+            &>* {
+                margin-bottom: 0;
+                margin-right: 2.5rem;
+            }
+        }
+
+        .user-block {
+            margin-top: 0;
+            margin-left: auto;
+            flex-direction: row;
+            align-items: center;
+
+            &__selection {
+                display: block;
+                overflow: hidden;
+                width: 15rem;
+                border: 2px solid $color_grey;
+                border-radius: 15px;
+                padding-left: 10px;
+
+                select {
+                    width: 500px;
+                    border: none;
+                }
+            }
+
+            &__mobile-cabinet {
+                display: none;
+            }
+
+            &__comparsion {
+                margin-left: 0;
+                margin-right: 2.5rem;
+            }
+
+            &>* {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,49 @@
+//TODO: Спрайт с картиночками
+.call-us {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 2.2rem;
+    position: absolute;
+    right: 7rem;
+    top: 2.6rem;
+
+    &--acitve {
+        position: static;
+        order: 9;
+        font-size: 4rem;
+        margin-left: 0;
+    }
+
+    &__phone-link {
+        display: inline-block;
+        width: 3.7rem;
+        height: 3.7rem;
+        border-radius: 50%;
+        background: $color-primary url(../img/phone.png) no-repeat;
+        background-position: center;
+        margin-left: 1.5rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 5rem;
+            height: 5rem;
+            border: 1px solid $color-primary;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-51.5%,-50%);
+        }
+    }
+}
+
+@media (min-width: 1280px) {
+    .call-us {
+        position: static;
+        order: 9;
+        margin-right: 0;
+    }
+}
