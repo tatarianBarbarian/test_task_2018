@@ -1,0 +1,10 @@
+.notifications {
+    margin-top: 8rem;
+}
+
+@media (min-width: 1280px) {
+    .notifications {
+        width: 71.875%;
+        margin-top: 0;
+    }
+}

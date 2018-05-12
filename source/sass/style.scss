@@ -16,11 +16,18 @@
 
 //Layout styles
 
+@import 'layout/_container.scss';
 @import 'layout/_main_header.scss';
+@import 'layout/_main_h.scss';
+@import 'layout/_content-sidebar.scss';
+@import 'layout/_notifications.scss';
+@import 'layout/_news.scss';
 
 //Component styles
 
 @import 'components/_menu_btn.scss';
 @import 'components/_call-us.scss';
+@import 'components/_sidebar.scss';
+@import 'components/_notification.scss';
 
 @import 'pages/_notifications';

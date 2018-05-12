@@ -1,0 +1,51 @@
+.notification {
+    margin-bottom: 3rem;
+
+    .notification-expand {
+        display: none;
+    }
+
+    &__content {
+        display: none;
+    }
+
+    .notification-expand:checked ~ label > &__content {
+        display: block;
+        margin-top: 1rem;
+        line-height: 2.5rem;
+    }
+
+    .notification-expand:checked ~ label {
+        background: $notification_color;
+
+        &::after {
+            background: url(../img/arrow-purple.png) no-repeat;
+            background-size: cover;
+            transform: rotate(0);
+        }
+    }
+
+    label {
+        display: block;
+        border: 1px solid $color_grey;
+        border-radius: 6px;
+        padding: 2.5rem;
+        position: relative;
+        cursor: pointer;
+
+
+        &::after {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            display: block;
+            content: '';
+            width: 2rem;
+            height: 2rem;
+            background: url(../img/arrow.png) no-repeat;
+            transform: rotate(90deg);
+            transition: transform .5s;
+        }
+    }
+
+}

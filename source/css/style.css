@@ -475,6 +475,34 @@ body {
 .u-c-dark-grey {
   color: #565f66; }
 
+.u-c-grey {
+  color: #777b80; }
+
+.u-t-mid-up {
+  font-size: 1.8rem; }
+
+.u-t-24 {
+  font-size: 2.4rem; }
+
+.u-margin-bottom-4 {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-1 {
+  margin-bottom: 1rem; }
+
+.container {
+  width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px; } }
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1200px; } }
+
 .main-header {
   display: flex;
   align-items: flex-start;
@@ -569,6 +597,50 @@ body {
       .main-header .user-block > * {
         margin-bottom: 0; } }
 
+.obj-photo {
+  height: 23.3rem;
+  background-image: url(../img/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .obj-photo__adr-name {
+    position: relative;
+    bottom: -16rem; }
+  .obj-photo h1 {
+    display: inline;
+    background-color: white;
+    vertical-align: bottom;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    padding: 0 10px; }
+
+@media (min-width: 768px) {
+  .obj-photo {
+    background-image: url(../img/bg-tablet.png);
+    background-position: center; } }
+
+@media (min-width: 1280px) {
+  .obj-photo {
+    background-image: url(../img/bg-desktop.png);
+    background-position: center; } }
+
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem; }
+
+@media (min-width: 1280px) {
+  .content-sidebar {
+    flex-direction: row; } }
+
+.notifications {
+  margin-top: 8rem; }
+
+@media (min-width: 1280px) {
+  .notifications {
+    width: 71.875%;
+    margin-top: 0; } }
+
 .menu-button {
   width: 33px;
   height: 22px;
@@ -633,3 +705,111 @@ body {
     position: static;
     order: 9;
     margin-right: 0; } }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto; }
+  .sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(119, 123, 128, 0.13);
+    border-radius: 1.5rem;
+    padding: .5rem 0;
+    padding-left: 1rem;
+    overflow-y: hidden;
+    height: 3.5rem;
+    position: relative; }
+  .sidebar__menu-item {
+    color: #893b67;
+    text-decoration: none;
+    margin-bottom: 4rem;
+    max-width: 90%; }
+    .sidebar__menu-item--active {
+      order: -1; }
+  .sidebar__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem; }
+  .sidebar__item {
+    width: 46%;
+    padding-right: 5rem; }
+    .sidebar__item:first-child {
+      border-right: 1px solid rgba(119, 123, 128, 0.13); }
+  .sidebar__adr-link {
+    display: flex;
+    justify-content: space-between; }
+  .sidebar__goto {
+    position: relative; }
+    .sidebar__goto::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 2rem;
+      background: url(../img/arrow.png) no-repeat;
+      right: -2.5rem;
+      top: 0; }
+
+@media (min-width: 1280px) {
+  .sidebar {
+    width: 25.78125%;
+    margin-right: 4rem;
+    border-right: 1px solid rgba(119, 123, 128, 0.13);
+    padding-right: 2rem; }
+    .sidebar__menu {
+      height: auto;
+      border: none; }
+    .sidebar__menu-item {
+      color: #893b67; }
+      .sidebar__menu-item--active {
+        order: 0; }
+    .sidebar__items {
+      flex-direction: column; }
+    .sidebar__item {
+      width: 100%;
+      padding-right: 5rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      border-top: 1px solid rgba(119, 123, 128, 0.13);
+      border-right: none;
+      margin-top: 1rem; }
+      .sidebar__item:first-child {
+        border-right: none; } }
+
+.notification {
+  margin-bottom: 3rem; }
+  .notification .notification-expand {
+    display: none; }
+  .notification__content {
+    display: none; }
+  .notification-expand:checked ~ label > .notification__content {
+    display: block;
+    margin-top: 1rem;
+    line-height: 2.5rem; }
+  .notification .notification-expand:checked ~ label {
+    background: #fcfcfc; }
+    .notification .notification-expand:checked ~ label::after {
+      background: url(../img/arrow-purple.png) no-repeat;
+      background-size: cover;
+      transform: rotate(0); }
+  .notification label {
+    display: block;
+    border: 1px solid #edeeee;
+    border-radius: 6px;
+    padding: 2.5rem;
+    position: relative;
+    cursor: pointer; }
+    .notification label::after {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      display: block;
+      content: '';
+      width: 2rem;
+      height: 2rem;
+      background: url(../img/arrow.png) no-repeat;
+      transform: rotate(90deg);
+      transition: transform .5s; }

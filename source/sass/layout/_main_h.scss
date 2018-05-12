@@ -1,0 +1,38 @@
+.obj-photo {
+    height: 23.3rem;
+    background-image: url(../img/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &__adr-name {
+        position: relative;
+        bottom: -16rem;
+    }
+
+    h1 {
+        display: inline;
+        background-color: white;
+        vertical-align: bottom;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break:clone;
+        padding: 0 10px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .obj-photo {
+        background-image: url(../img/bg-tablet.png);
+        background-position: center;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .obj-photo {
+        background-image: url(../img/bg-desktop.png);
+        background-position: center;
+    }
+}

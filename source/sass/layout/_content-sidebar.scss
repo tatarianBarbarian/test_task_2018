@@ -1,0 +1,13 @@
+.content-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+
+
+@media (min-width: 1280px) {
+     .content-sidebar {
+        flex-direction: row;
+    }
+}
