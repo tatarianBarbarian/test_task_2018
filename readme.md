@@ -3,5 +3,3 @@
 * Выполнил: Феликс Хафизов (upload212@yandex.ru).
 
 * Поглядеть в работе можно [тут](http://calando-bottom.000webhostapp.com/testing)
-
-* P.S. Автору макета два горячих чая прямо на ноги :D
