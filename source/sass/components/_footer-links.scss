@@ -1,0 +1,101 @@
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    
+    
+    &__partitions {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    input[type='checkbox'] {
+        display: none;
+    }
+    
+    input[type='checkbox']:checked + label {
+        .link {
+            display: inline;
+            margin-bottom: 1rem;
+        }
+        
+        &::before {
+            transform: rotateX(180deg);
+        }
+    } 
+    
+    &__partition {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $color_grey;
+//        padding-bottom: .3rem;
+        position: relative;
+        
+        &--hidden {
+            display: none;
+        }
+        
+        &:not(:first-child) {
+            margin-top: 1rem;
+        }
+        
+        p {
+            padding-bottom: 1rem;
+        }
+        
+        .link {
+                display: none;
+        }
+        
+        &::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            top: 1rem;
+            right: 0;
+            background: url(../img/arr-down.png) no-repeat;
+            transition: transform .5s;
+        }
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        
+        &__partitions {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        &__partition {
+            width: 50%;
+            border: none;
+            
+            &--hidden {
+                display: block;
+            }
+            
+            &::before {
+                display: none;
+            }
+            
+            .link {
+                display: block;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-links {
+        width: 100%;
+        
+        &__partition {
+            width: 25%;
+        }
+    }
+}

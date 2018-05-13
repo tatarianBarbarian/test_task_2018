@@ -3,7 +3,22 @@
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-
+    position: relative;
+    
+    &__mobile-expand {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #3B3A39;
+        border-bottom: none;
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: none;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+    }
+    
     &__menu {
         display: flex;
         flex-direction: column;
@@ -11,19 +26,49 @@
         border-radius: 1.5rem;
         padding: .5rem 0;
         padding-left: 1rem;
-        overflow-y: hidden;
-        height: 3.5rem;
+//        height: 3.5rem;
         position: relative;
+//        overflow: visible;
+        
+        &--expanded {
+            
+            
+            .sidebar__menu-item {
+                display: block;
+                margin-bottom: 2rem;
+                margin-top: 2rem;
+            }
+        }
     }
 
     &__menu-item {
         color: $color_primary;
         text-decoration: none;
-        margin-bottom: 4rem;
+//        margin-bottom: 4rem;
         max-width: 90%;
-
+        display: none;
+        
         &--active {
             order: -1;
+            display: block;
+        }
+        
+      &--notification {
+        span {
+                display: inline-block;
+                font-size: 11px;
+                color: white;
+                background: $color_primary;
+                width: 15px;
+                height: 15px;
+                text-align: center;
+                border-radius: 50%;
+                position: relative;
+                top: -10px;
+                left: 0;
+                padding-right: 1px;
+                padding-top: 2px;
+            }
         }
     }
 
@@ -37,9 +82,12 @@
     &__item {
         width: 46%;
         padding-right: 5rem;
+        
         &:first-child {
             border-right: 1px solid rgba($text_grey, 0.13);
         }
+        
+      
     }
 
     &__adr-link {
@@ -69,7 +117,11 @@
         margin-right: 4rem;
         border-right: 1px solid rgba($text_grey, 0.13);
         padding-right: 2rem;
-
+        
+        &__mobile-expand {
+            display: none;
+        }
+        
         &__menu {
             height: auto;
             border: none;
@@ -77,11 +129,24 @@
 
         &__menu-item {
             color: $color_primary;
-
+            display: block;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             &--active {
                 order: 0;
-
-
+                border-radius: 1rem;
+                box-shadow: 0 0 0 1.1rem white,
+                            0 0 0 1.2rem rgba($text_grey, 0.13);
+            }
+            
+            &--notification {
+                position: relative;
+                span {
+                    left: auto;
+                    position: absolute;
+                    top: -1.5rem;
+                    right: -1rem;
+                }
             }
         }
 

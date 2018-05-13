@@ -1,0 +1,58 @@
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    
+    &__contacts {
+        
+       
+    }
+    
+    &__socials {
+        display: flex;
+        margin-bottom: 3rem;
+    }
+    
+    &__social {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-right: 2rem;
+        background: url(../img/soc-icons.png) no-repeat;
+        
+        &--fb {
+            background-position: 0 0;
+        }
+        
+        &--vk {
+            background-position: -35px 0;
+            width: 25px;
+        }
+        
+        &--inst {
+            background-position: -79px 0;
+        }
+        
+        &--ok {
+         background-position: -114px 0;   
+        }
+        
+        &--yt {
+            background-position: -152px 0;
+            width: 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .main-footer {
+        flex-direction: row;
+    
+        &__contacts {
+            width: 50%;
+        }
+    }
+    
+    
+}

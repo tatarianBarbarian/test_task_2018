@@ -106,20 +106,41 @@
             margin-left: auto;
             flex-direction: row;
             align-items: center;
-
-            &__selection {
+            
+        &__selection-wrapper {
+            position:  relative;
+            
+            &::after {
+                content: '';
                 display: block;
-                overflow: hidden;
-                width: 15rem;
-                border: 2px solid $color_grey;
-                border-radius: 15px;
-                padding-left: 10px;
-
-                select {
-                    width: 500px;
-                    border: none;
-                }
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #3B3A39;
+                top: 11px;
+                right: 8px;
             }
+        }
+            
+            
+        &__selection {
+            display: block;
+            overflow: hidden;
+            width: 15.4rem;
+            border: 1px solid $color_grey;
+            border-radius: 15px;
+            padding-left: 10px;
+            -moz-appearance: none;
+            -webkit-appearance:none;
+            appearance: none;
+            position: relative;
+            padding: .2rem .7rem;
+            
+            
+        }
+            
 
             &__mobile-cabinet {
                 display: none;

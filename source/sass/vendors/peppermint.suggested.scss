@@ -142,13 +142,12 @@ ul.peppermint-dots > li > span {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #9b9890;
+    background: black;
 }
 
 ul.peppermint-dots > li.peppermint-active-dot > span {
-    margin: -6px 0 0 -6px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #9b9890;
-    background: transparent;
+//    margin: -6px 0 0 -6px;
+    width: 8px;
+    height: 8px;
+    background: grey;
 }

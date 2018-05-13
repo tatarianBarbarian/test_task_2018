@@ -22,13 +22,13 @@
             </nav>
             <div class="user-block">
                 <a href="#" class="user-block__comparsion link"><span>3</span>Сравнение</a>
-                <div class="user-block__selection">
-                    <select name="header-select" id="head-sel">
-                        <option value="/1">Личный кабинет</option>
-                        <option value="/2">Lorem</option>
-                        <option value="/3">Ipsum</option>
-                    </select>
-                </div>
+                    <span class="user-block__selection-wrapper">
+                       <select name="header-select" id="head-sel" class="user-block__selection">
+                            <option value="/1">Личный кабинет</option>
+                            <option value="/2">Lorem</option>
+                            <option value="/3">Ipsum</option>
+                        </select>
+                    </span>
                 <a href="#" class="link user-block__mobile-cabinet">Личный кабинет</a>
             </div>
         <button id="menu-button" class="menu-button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
@@ -36,20 +36,21 @@
     <main>
         <header class="obj-photo">
             <div class="obj-photo__adr-name container">
-                <h1 class="heading-primary"><span class="u-t-mid-up u-c-grey">Адрес</span><br> Объект №51</h1>
+                <h1 class="heading-primary"><span class="u-t-mid-up u-c-grey">Адрес 123</span><br> Объект №51</h1>
             </div>
         </header>
         <section class="content-sidebar container">
             <aside class="sidebar">
                 <nav class="sidebar__menu">
                     <!-- TODO: Циферка уведомлений               -->
+                    <button class="sidebar__mobile-expand" id="sidebar_button"><span class="visually-hidden">Раскрыть боковое меню</span></button>
                     <a href="#" class="sidebar__menu-item">Документы</a>
                     <a href="#" class="sidebar__menu-item">План</a>
                     <a href="#" class="sidebar__menu-item">Оплата</a>
                     <a href="#" class="sidebar__menu-item">Стадии</a>
                     <a href="#" class="sidebar__menu-item">Online</a>
                     <a href="#" class="sidebar__menu-item">Инструкции</a>
-                    <a href="#" class="sidebar__menu-item sidebar__menu-item--active">Уведомления</a>
+                    <a href="#" class="sidebar__menu-item sidebar__menu-item--notification sidebar__menu-item--active">Уведомления<span>6</span></a>
                 </nav>
                 <div class="sidebar__items">
                     <div class="sidebar__item">
@@ -119,27 +120,33 @@
             </article>
         </section>
         <section class="news">
-            <div class="carousel">
-                <a href="#" class="carousel__item">
-                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="category category--promo">Акция</span></time>
-                     <p class="paragraph small">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
-                </a>
-                <a href="#" class="carousel__item">
-                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="category category--news">Новости</span></time>
-                     <p class="paragraph small">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
-                </a>
-                <a href="#" class="carousel__item">
-                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="category category--promos">Акции</span></time>
-                     <p class="paragraph small">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
-                </a>
-                <a href="#" class="carousel__item">
-                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="category category--events">События</span></time>
-                     <p class="paragraph small">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
-                </a>
+            <div class="carousel container peppermint" id='peppermint'>
+                <figure><a href="#" class="carousel__item">
+                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="carousel__item-category carousel__item-category--promo">Акция</span></time> <br><br>
+                     <p class="carousel__text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+                </a></figure>
+                <figure>
+                    <a href="#" class="carousel__item">
+                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="carousel__item-category">Новости</span></time><br><br>
+                     <p class="carousel__text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+                     </a>
+                </figure>
+                <figure>
+                    <a href="#" class="carousel__item">
+                         <time class="carousel__date" datetime="2017-09-22">24/07 <span class="carousel__item-category">Акции</span></time><br><br>
+                         <p class="carousel__text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="#" class="carousel__item">
+                     <time class="carousel__date" datetime="2017-09-22">24/07 <span class="carousel__item-category">События</span></time><br><br>
+                     <p class="carousel__text">Гелиоцентрическое расстояние, как принято считать, продольно перечеркивает липарит.</p>
+                    </a>    
+                </figure>
             </div>
         </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
         <div class="main-footer__contacts">
             <div class="main-footer__socials">
                 <h3 class="visually-hidden">Подписывайтесь на нас в социальных сетях!</h3>
@@ -149,15 +156,16 @@
                 <a href="" class="main-footer__social main-footer__social--ok"><span class="visually-hidden">Odnoklassniki</span></a>
                 <a href="" class="main-footer__social main-footer__social--yt"><span class="visually-hidden">Youtube</span></a>
             </div>
-            <p class="paragraph paragraph--large u-t-bold">+7 000 000-00-00</p>
-            <p class="paragraph paragraph--small">Адрес, улица, дом, корпус</p>
-            <a href="mailto:post@comp.com" class="link">post@comp.com</a>
+            <p class="paragraph u-t-24 u-t-bold u-margin-bottom-2d4">+7 000 000-00-00</p>
+            <p class="paragraph u-t-14 u-margin-bottom-2d4">Адрес, улица, дом, корпус</p>
+            <a href="mailto:post@comp.com" class="link u-margin-bottom-2d4">post@comp.com</a><br><br>
         </div>
         <div class="footer-links">
             <div class="footer-links__block">
                 <div class="footer-links__partitions">
-                    <ul class="footer-links__partition">
-                        <p class="paragraph u-text-small.u-text-bold">Раздел №1</p>
+                    <input type="checkbox" name="" id="partition-1">
+                    <label for="partition-1" class="footer-links__partition footer-links__partition--collapsed">
+                        <p class="paragraph u-t-14 u-t-bold">Раздел №1</p>
                         <br>
                         <a href="#" class="link">Подраздел №1</a>
                         <a href="#" class="link">Подраздел №2</a>
@@ -165,17 +173,19 @@
                         <a href="#" class="link">Подраздел №4</a>
                         <a href="#" class="link">Подраздел №5</a>
                         <a href="#" class="link">Подраздел №6</a>
-                    </ul>
-                    <ul class="footer-links__partition">
-                        <p class="paragraph u-text-small.u-text-bold">Раздел №2</p>
+                    </label>
+                    <input type="checkbox" name="" id="partition-2">
+                    <label for="partition-2" class="footer-links__partition footer-links__partition--collapsed">
+                        <p class="paragraph u-t-14 u-t-bold">Раздел №2</p>
                         <br>
                         <a href="#" class="link">Подраздел №1</a>
                         <a href="#" class="link">Подраздел №2</a>
                         <a href="#" class="link">Подраздел №3</a>
                         <a href="#" class="link">Подраздел №4</a>
-                    </ul>
-                    <ul class="footer-links__partition">
-                        <p class="paragraph u-text-small.u-text-bold">Раздел №3</p>
+                    </label>
+                    <input type="checkbox" name="" id="partition-3">
+                    <label for="partition-3" class="footer-links__partition footer-links__partition--collapsed">
+                        <p class="paragraph u-t-14 u-t-bold">Раздел №3</p>
                         <br>
                         <a href="#" class="link">Подраздел №1</a>
                         <a href="#" class="link">Подраздел №2</a>
@@ -183,18 +193,19 @@
                         <a href="#" class="link">Подраздел №4</a>
                         <a href="#" class="link">Подраздел №5</a>
                         <a href="#" class="link">Подраздел №6</a>
-                    </ul>
-                    <ul class="footer-links__partition">
-                        <p class="paragraph u-text-small.u-text-bold">&nbsp;</p>
-                        <br>
+                    </label>
+                    <input type="checkbox" name="" id="partition-4">
+                    <label for="partition-4" class="footer-links__partition footer-links__partition--hidden">
+                        <p class="paragraph u-t-14 u-t-bold">&nbsp;</p>
                         <a href="#" class="link">Подраздел №1</a>
                         <a href="#" class="link">Подраздел №2</a>
                         <a href="#" class="link">Подраздел №3</a>
-                    </ul>
+                    </label>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="js/peppermint.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

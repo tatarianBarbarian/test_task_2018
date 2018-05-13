@@ -1,0 +1,68 @@
+.carousel {
+    padding: 1.5rem 0;
+    
+    
+    &__item {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        width: 100% !important;
+        padding: 1rem 2rem 0rem;
+        
+        
+    }
+    
+    &__date {
+        font-size: 1.4rem;
+        color: rgba(black,0.4);
+        position: relative;
+    }
+    
+    &__text {
+        font-size: 2.184rem;
+        line-height: 2.808rem;
+    }
+    
+    &__item-category {
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        background: white;
+        padding: .3rem .8rem;
+        
+        &--promo {
+            background: $color_green;
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
+            clip-path: polygon(0% 0%, 100% 0%, 90% 50%, 100% 100%, 0% 100%, 10% 50%); 
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        
+        
+        &__item {
+            width: 29.94791666666667%;
+        }
+    }
+}
+
+@media (min-width: 1280px)  {
+    .carousel {
+        overflow-x: hidden;
+        
+        &__text {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+        }
+    }
+}

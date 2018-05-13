@@ -22,6 +22,7 @@
 @import 'layout/_content-sidebar.scss';
 @import 'layout/_notifications.scss';
 @import 'layout/_news.scss';
+@import 'layout/_main-footer.scss';
 
 //Component styles
 
@@ -29,5 +30,7 @@
 @import 'components/_call-us.scss';
 @import 'components/_sidebar.scss';
 @import 'components/_notification.scss';
+@import 'components/_carousel.scss';
+@import 'components/_footer-links.scss';
 
 @import 'pages/_notifications';
