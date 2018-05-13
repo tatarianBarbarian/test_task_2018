@@ -811,8 +811,8 @@ body {
     background-position: center;
     margin-left: 1.5rem;
     position: relative;
-    -webkit-box-shadow: 0 0 0 0.1rem white, 0 0 0 0.5rem #893b67, 0 0 0 0.8rem white, 0 0 0 0.9rem #893b67;
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.5rem #893b67, 0 0 0 0.8rem white, 0 0 0 0.9rem #893b67; }
+    -webkit-box-shadow: 0 0 0 0.4rem white, 0 0 0 0.5rem #893b67, 0 0 0 0.8rem white, 0 0 0 0.9rem #893b67;
+    box-shadow: 0 0 0 0.4rem white, 0 0 0 0.5rem #893b67, 0 0 0 0.8rem white, 0 0 0 0.9rem #893b67; }
     .call-us__phone-link::before {
       content: '';
       display: block;
