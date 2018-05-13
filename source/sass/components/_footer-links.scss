@@ -51,8 +51,8 @@
             position: absolute;
             content: '';
             display: block;
-            width: 20px;
-            height: 20px;
+            width: 2rem;
+            height: 2rem;
             top: 1rem;
             right: 0;
             background: url(../img/arr-down.png) no-repeat;
@@ -62,7 +62,7 @@
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet_width) {
     .footer-links {
         
         &__partitions {
@@ -90,7 +90,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $desktop_width) {
     .footer-links {
         width: 100%;
         

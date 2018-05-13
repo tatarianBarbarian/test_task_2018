@@ -1,13 +1,19 @@
 @font-face {
-  font-family: VidaPro;
-  src: url(../font/Vida31pro/vida31pro.otf) format("opentype");
+    font-family: 'VidaPro';
+    src: url('../font/Vida33Pro/Vida33Pro.woff2') format('woff2'),
+        url('../font/Vida33Pro/Vida33Pro.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: VidaPro;
-  src: url(../font/Vida33pro/vida33pro.otf) format("opentype");
-  font-weight: bold;
+    font-family: 'VidaPro';
+    src: url('../font/Vida31Pro/Vida31Pro.woff2') format('woff2'),
+        url('../font/Vida31Pro/Vida31Pro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 html {
     font-size: 62.5%;

@@ -8,7 +8,7 @@
     transition: height 3s;
 
     &--hidden {
-        height: 90px;
+        height: 9rem;
         transition: height 3s;
     }
 
@@ -62,8 +62,8 @@
                     font-size: 11px;
                     color: white;
                     background: $color_primary;
-                    width: 14px;
-                    height: 13px;
+                    width: 1.4rem;
+                    height: 1.3rem;
                     text-align: center;
                     border-radius: 50%;
                     position: relative;
@@ -75,7 +75,7 @@
 
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop_width) {
     .main-header {
         height: auto;
         flex-direction: row;
@@ -130,8 +130,8 @@
             overflow: hidden;
             width: 15.4rem;
             border: 1px solid $color_grey;
-            border-radius: 15px;
-            padding-left: 10px;
+            border-radius: 1.5rem;
+            padding-left: 1rem;
             -moz-appearance: none;
             -webkit-appearance:none;
             appearance: none;

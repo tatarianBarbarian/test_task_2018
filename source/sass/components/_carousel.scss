@@ -42,7 +42,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet_width) {
     .carousel {
         display: flex;
         overflow-x: scroll;
@@ -53,16 +53,17 @@
         &__item {
             width: 29.94791666666667%;
         }
-    }
-}
-
-@media (min-width: 1280px)  {
-    .carousel {
-        overflow-x: hidden;
         
         &__text {
             font-size: 1.4rem;
             line-height: 1.8rem;
         }
+    }
+}
+
+@media (min-width: $desktop_width)  {
+    .carousel {
+        overflow-x: hidden;
+         
     }
 }

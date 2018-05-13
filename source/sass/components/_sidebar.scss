@@ -11,8 +11,8 @@
         border-top: 5px solid #3B3A39;
         border-bottom: none;
         position: absolute;
-        width: 5px;
-        height: 5px;
+        width: .5rem;
+        height: .5rem;
         background: none;
         right: 1rem;
         top: 1rem;
@@ -59,12 +59,12 @@
                 font-size: 11px;
                 color: white;
                 background: $color_primary;
-                width: 15px;
-                height: 15px;
+                width: 1.5rem;
+                height: 1.5rem;
                 text-align: center;
                 border-radius: 50%;
                 position: relative;
-                top: -10px;
+                top: -1rem;
                 left: 0;
                 padding-right: 1px;
                 padding-top: 2px;
@@ -111,7 +111,7 @@
     }
 }
 
-@media (min-width: 1280px){
+@media (min-width: $desktop_width){
     .sidebar {
         width: 25.78125%;
         margin-right: 4rem;

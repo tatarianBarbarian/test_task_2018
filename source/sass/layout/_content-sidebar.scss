@@ -6,7 +6,7 @@
 
 
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop_width) {
      .content-sidebar {
         flex-direction: row;
     }

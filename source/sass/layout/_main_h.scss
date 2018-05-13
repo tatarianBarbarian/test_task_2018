@@ -16,13 +16,13 @@
         vertical-align: bottom;
         box-decoration-break: clone;
         -webkit-box-decoration-break:clone;
-        padding: 0 10px;
+        padding: 0 1rem;
     }
 
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet_width) {
     .obj-photo {
         background-image: url(../img/bg-tablet.png);
         background-position: center;
@@ -30,7 +30,7 @@
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop_width) {
     .obj-photo {
         background-image: url(../img/bg-desktop.png);
         background-position: center;

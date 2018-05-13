@@ -1,17 +1,23 @@
 .container {
-    width: 640px;
+    width: 64rem;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet_width) {
     .container {
-        width: 768px;
+        width: 76.8rem;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: $desktop_width) {
     .container {
-        width: 1200px;
+        width: 120rem;
+    }
+}
+
+@media (max-width: $mobile_small_up_to) {
+    .container {
+        width: 100%;
     }
 }

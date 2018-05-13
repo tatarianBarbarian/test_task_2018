@@ -16,8 +16,8 @@
     
     &__social {
         display: inline-block;
-        width: 17px;
-        height: 17px;
+        width: 1.7rem;
+        height: 1.7rem;
         margin-right: 2rem;
         background: url(../img/soc-icons.png) no-repeat;
         
@@ -45,7 +45,7 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet_width) {
     .main-footer {
         flex-direction: row;
     
